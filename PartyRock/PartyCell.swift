@@ -28,7 +28,7 @@ class PartyCell: UITableViewCell {
             do {
             let data = try Data(contentsOf: url)
                 DispatchQueue.global().sync {
-                    // sync is the main thread( here the use of sync is valid because it will be displaying on UI phase)
+                    // sync is the main thread(here the use of sync is valid because it will be displaying on UI phase)
                     
                     self.VideoPreviewImage.image = UIImage(data: data)
                 }

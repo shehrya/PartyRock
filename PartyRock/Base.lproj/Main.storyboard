@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
         <array key="still time.ttf">
             <string>StillTime-Regular</string>
         </array>
@@ -81,18 +84,18 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="72" id="BcO-37-S8X" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BcO-37-S8X" id="8fZ-fd-PyO">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="BcO-37-S8X" id="8fZ-fd-PyO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="3Is-UF-wkP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="3Is-UF-wkP">
                                                     <rect key="frame" x="0.0" y="2" width="66" height="66"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="hoJ-tq-vZR"/>
                                                         <constraint firstAttribute="height" constant="66" id="qw0-AF-Gua"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where sun goes down" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-AE-HvI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Where sun goes down" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdU-AE-HvI">
                                                     <rect key="frame" x="74" y="14" width="301" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="959-Fu-Vv4"/>
@@ -107,7 +110,7 @@
                                             <constraints>
                                                 <constraint firstItem="gdU-AE-HvI" firstAttribute="leading" secondItem="3Is-UF-wkP" secondAttribute="trailing" constant="8" id="BnY-LD-9hc"/>
                                                 <constraint firstAttribute="trailing" secondItem="gdU-AE-HvI" secondAttribute="trailing" id="EoR-dc-FCb"/>
-                                                <constraint firstItem="3Is-UF-wkP" firstAttribute="leading" secondItem="8fZ-fd-PyO" secondAttribute="leading" id="b4t-8R-BUg"/>
+                                                <constraint firstItem="3Is-UF-wkP" firstAttribute="leading" secondItem="8fZ-fd-PyO" secondAttribute="leading" constant="5" id="b4t-8R-BUg"/>
                                                 <constraint firstItem="3Is-UF-wkP" firstAttribute="centerY" secondItem="8fZ-fd-PyO" secondAttribute="centerY" id="cPd-Ih-FFq"/>
                                                 <constraint firstItem="gdU-AE-HvI" firstAttribute="centerY" secondItem="8fZ-fd-PyO" secondAttribute="centerY" id="nTO-3O-weL"/>
                                             </constraints>
@@ -157,14 +160,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Qj-Oo-eTc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+                                <rect key="frame" x="0.0" y="45" width="375" height="247"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="247" id="Tgc-1G-1An"/>
                                 </constraints>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItU-Tb-7YO">
-                                <rect key="frame" x="21" y="297" width="343" height="73"/>
+                                <rect key="frame" x="21" y="342" width="343" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="yOC-Wt-EUU"/>
                                 </constraints>
@@ -172,14 +175,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ve-ev-8X5">
+                                <rect key="frame" x="0.0" y="13" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jlV-vy-VNZ"/>
+                                    <constraint firstAttribute="width" constant="49" id="ziT-q4-eVL"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="zLC-Kk-yOe" eventType="touchUpInside" id="o7c-K2-4Z3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="nEU-gQ-ylp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91937065790147343" green="0.91937065790147343" blue="0.91937065790147343" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ItU-Tb-7YO" firstAttribute="trailing" secondItem="IQg-O8-iMa" secondAttribute="trailingMargin" constant="5" id="U75-Ym-j1t"/>
                             <constraint firstItem="ItU-Tb-7YO" firstAttribute="leading" secondItem="IQg-O8-iMa" secondAttribute="leadingMargin" constant="5" id="V2I-Ra-Fbb"/>
                             <constraint firstAttribute="trailing" secondItem="9Qj-Oo-eTc" secondAttribute="trailing" id="bR1-7z-TOL"/>
+                            <constraint firstItem="6Ve-ev-8X5" firstAttribute="top" secondItem="IQg-O8-iMa" secondAttribute="top" constant="13" id="dHI-la-af2"/>
                             <constraint firstItem="ItU-Tb-7YO" firstAttribute="top" secondItem="9Qj-Oo-eTc" secondAttribute="bottom" constant="50" id="pX5-ua-FHq"/>
-                            <constraint firstItem="9Qj-Oo-eTc" firstAttribute="top" secondItem="IQg-O8-iMa" secondAttribute="top" id="qho-1w-a5e"/>
+                            <constraint firstItem="9Qj-Oo-eTc" firstAttribute="top" secondItem="IQg-O8-iMa" secondAttribute="top" constant="45" id="qho-1w-a5e"/>
+                            <constraint firstItem="6Ve-ev-8X5" firstAttribute="leading" secondItem="IQg-O8-iMa" secondAttribute="leading" id="zA3-Pi-PlR"/>
                             <constraint firstItem="9Qj-Oo-eTc" firstAttribute="leading" secondItem="IQg-O8-iMa" secondAttribute="leading" id="zYy-a9-1Pn"/>
                         </constraints>
                     </view>
